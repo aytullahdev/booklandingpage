@@ -610,8 +610,6 @@ a {
 }
 
 .card-container {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -619,6 +617,9 @@ a {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  overflow-x: hidden;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .card {
