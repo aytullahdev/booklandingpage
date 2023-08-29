@@ -6,6 +6,7 @@
     <!-- Cdn tailwindcss -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="./dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-[#413E65] ">
     <!-- Price & Plans -->
@@ -16,7 +17,7 @@
         more visitors than any website.
       </p>
       <div class="card-container">
-        <div class="card">
+        <div class="card" data-aos="fade-right">
           <h1 class="price-card-title">Limited</h1>
           <p class="price-card-price">Free</p>
           <p class="price-card-description">
@@ -58,7 +59,7 @@
             </button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up-left">
           <h1 class="price-card-title">Only eBook</h1>
           <p class="price-card-price">$29</p>
           <p class="price-card-feature">One time purchase</p>
@@ -70,7 +71,7 @@
             <button class="btn-primary w-full text-xl">Buy from Amazon</button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-left">
           <h1 class="price-card-title">Everything</h1>
           <p class="price-card-price">$49</p>
           <p class="price-card-feature">One time purchase</p>
@@ -84,5 +85,9 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
