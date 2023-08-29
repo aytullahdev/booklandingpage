@@ -42,7 +42,7 @@
     @apply flex  justify-center flex-row flex-wrap  w-full  gap-8 my-5 items-center ;
   }
   .card{
-     @apply bg-white rounded-md p-4 w-[300px] md:w-[350px] cursor-pointer flex flex-col justify-between h-[440px] ;
+     @apply bg-white rounded-md p-5 w-[300px] md:w-[350px] cursor-pointer flex flex-col justify-between h-[440px] ;
   }
   .price-card-title{
      @apply text-indigo text-base font-normal text-center  py-2 ;
