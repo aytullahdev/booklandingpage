@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@layer base{
+  body{
+    @apply font-circular;
+  }
+  a{
+    @apply  text-indigo;
+  }
+  
+  /* Apply change in base file */
+}
+
+
+@layer components{
+  .content{
+    @apply  mx-auto py-10;
+  }
+  .section-title{
+    @apply text-[#19191B] font-bold text-4xl md:text-6xl text-center leading-10 ;
+  }
+  .section-description{
+     @apply text-center text-lg md:text-xl text-white/70 font-normal;
+  }
+  .btn-primary{
+    @apply bg-primary px-10 py-4  text-white rounded-sm;
+  }
+  .btn-secondary{
+    @apply bg-secondary px-10 py-4  text-white rounded-sm;
+  }
+  .btn-gray{
+    @apply bg-[#F7F7FB] text-[#696871] text-base rounded-sm py-4 px-10;
+  }
+  .card-container{
+    @apply flex  justify-center flex-row flex-wrap  w-full  gap-8 my-5 items-center ;
+  }
+  .card{
+     @apply bg-white rounded-md p-3 w-[300px] md:w-[350px] cursor-pointer flex flex-col justify-between h-[440px] ;
+  }
+  .price-card-title{
+     @apply text-indigo text-base font-normal text-center  py-2 ;
+  }
+  .price-card-price{
+    @apply text-6xl text-[#1D293F] font-bold text-center py-2;
+  }
+  .price-card-description{
+     @apply text-xl leading-10 font-normal  text-center py-2;
+  }
+  .price-card-feature{
+    @apply text-center text-[#696871] text-base pt-2;
+  }
+}

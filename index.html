@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Cdn tailwindcss -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#413E65] ">
+    <!-- Price & Plans -->
+    <div class="content">
+      <h1 class=" section-title text-white">Price & Plans</h1>
+      <p class="section-description py-5">
+        Create custom landing pages with Omega that converts<br />
+        more visitors than any website.
+      </p>
+      <div class="card-container">
+        <div class="card">
+          <h1 class="price-card-title">Limited</h1>
+          <p class="price-card-price">Free</p>
+          <p class="price-card-description">
+            Get a free chapter of our<br />
+            book right now.
+          </p>
+          <div class="flex flex-col space-y-4 mt-12">
+            <button class="btn-gray w-full flex justify-start items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="18"
+                viewBox="0 0 22 18"
+                fill="none"
+              >
+                <path
+                  d="M2 2L11.5 10L21 2"
+                  stroke="#CDCCD9"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <rect
+                  x="1"
+                  y="1"
+                  width="20"
+                  height="16"
+                  rx="2"
+                  stroke="#CDCCD9"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p class="mx-auto">Email address</p>
+            </button>
+            <button class="btn-secondary w-full text-xl">
+              Send free chapter
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <h1 class="price-card-title">Only eBook</h1>
+          <p class="price-card-price">$29</p>
+          <p class="price-card-feature">One time purchase</p>
+          <p class="price-card-description">
+            Get the eBook version + <br />
+            Audio version of the book.
+          </p>
+          <div class="flex flex-col space-y-4 mt-12">
+            <button class="btn-primary w-full text-xl">Buy from Amazon</button>
+          </div>
+        </div>
+        <div class="card">
+          <h1 class="price-card-title">Everything</h1>
+          <p class="price-card-price">$49</p>
+          <p class="price-card-feature">One time purchase</p>
+          <p class="price-card-description">
+            Hardcover + eBook version + <br />
+            Audio version of the book.
+          </p>
+          <div class="flex flex-col space-y-4 mt-12">
+            <button class="btn-primary w-full text-xl">Buy from Amazon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
