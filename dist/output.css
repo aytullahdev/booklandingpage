@@ -533,6 +533,40 @@ a {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .content {
   margin-left: auto;
   margin-right: auto;
@@ -622,6 +656,12 @@ a {
   padding-bottom: 1.25rem;
 }
 
+@media (min-width: 1024px) {
+  .card-container {
+    justify-content: space-between;
+  }
+}
+
 .card {
   display: flex;
   height: 440px;
@@ -679,6 +719,85 @@ a {
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(105 104 113 / var(--tw-text-opacity));
+}
+
+.faqdiv {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2.5rem;
+  overflow-x: hidden;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .faqdiv {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .faqdiv {
+    gap: 5rem;
+  }
+}
+
+.faq-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.faq-card > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.faq-card {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .faq-card {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.faq-icon {
+  padding-top: 0.5rem;
+}
+
+.faq-title {
+  padding-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .faq-title {
+    padding-bottom: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.faq-ans {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(255 255 255 / 0.7);
+}
+
+@media (min-width: 1024px) {
+  .faq-ans {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .mx-auto {

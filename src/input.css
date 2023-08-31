@@ -39,7 +39,7 @@
     @apply bg-[#F7F7FB] text-[#696871] text-base rounded-sm py-4 px-10;
   }
   .card-container{
-    @apply flex  justify-center flex-row flex-wrap  w-full  gap-8  items-center overflow-x-hidden py-5 ;
+    @apply flex justify-center lg:justify-between flex-row flex-wrap  w-full  gap-8  items-center overflow-x-hidden py-5 ;
   }
   .card{
      @apply bg-white rounded-md p-5 w-[300px] md:w-[350px] cursor-pointer flex flex-col justify-between h-[440px] ;
@@ -55,5 +55,20 @@
   }
   .price-card-feature{
     @apply text-center text-[#696871] text-base pt-2;
+  }
+  .faqdiv{
+      @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-20 py-20 overflow-x-hidden;
+  }
+  .faq-card{
+    @apply flex px-5 lg:px-0 flex-row justify-start items-start space-x-5;
+  }
+  .faq-icon{
+    @apply pt-2;
+  }
+  .faq-title{
+     @apply text-lg lg:text-2xl text-white pb-2 lg:pb-5;
+  }
+  .faq-ans{
+     @apply text-sm lg:text-base text-white/70;
   }
 }
