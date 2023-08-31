@@ -570,6 +570,7 @@ a {
 .content {
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -643,6 +644,50 @@ a {
   color: rgb(105 104 113 / var(--tw-text-opacity));
 }
 
+.about-author {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-author > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.about-author {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .about-author {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    flex-direction: row;
+  }
+
+  .about-author > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+.author-img {
+  width: 10rem;
+}
+
+@media (min-width: 1024px) {
+  .author-img {
+    width: 100%;
+  }
+}
+
 .card-container {
   display: flex;
   width: 100%;
@@ -660,6 +705,22 @@ a {
   .card-container {
     justify-content: space-between;
   }
+}
+
+.author-name {
+  padding-bottom: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(25 25 27 / var(--tw-text-opacity));
+}
+
+.author-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(105 104 113 / var(--tw-text-opacity));
 }
 
 .card {
@@ -862,6 +923,11 @@ a {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -944,6 +1010,11 @@ a {
   padding-right: 1.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -952,15 +1023,6 @@ a {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-2xl {
@@ -973,6 +1035,11 @@ a {
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -981,11 +1048,6 @@ a {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-black {
