@@ -21,7 +21,7 @@
 
 @layer components{
   .content{
-    @apply  mx-auto py-10;
+    @apply  mx-auto py-20 container;
   }
   .section-title{
     @apply text-[#19191B] font-bold text-4xl md:text-6xl text-center leading-10 ;
@@ -56,9 +56,25 @@
   .price-card-feature{
     @apply text-center text-[#696871] text-base pt-2;
   }
+  .review-card-desc{
+    @apply text-xl leading-10 font-normal  text-center py-2;
+  }
+  .review-user{
+    @apply flex flex-row justify-start space-x-4 items-center;
+  }
+  .review-user-photo{
+    @apply h-11 w-11 rounded-full;
+  }
+  .reviewer-name{
+    @apply text-[#19191B] text-xl font-bold;
+  }
+  .reviewer-title{
+    @apply text-[#696871] text-base;
+  }
   .faqdiv{
       @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-20 py-20 overflow-x-hidden;
   }
+
   .faq-card{
     @apply flex px-5 lg:px-0 flex-row justify-start items-start space-x-5;
   }
@@ -70,5 +86,8 @@
   }
   .faq-ans{
      @apply text-sm lg:text-base text-white/70;
+  }
+  .footer-nav{
+    @apply text-[#19191B] text-xs lg:text-base;
   }
 }
