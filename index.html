@@ -181,7 +181,14 @@
         </div>
         <div class="flex justify-center items-center py-10">
           <a href="" class="underline text-base "
-            >Check all 3,583 reviews on Amazon.com</a
+            >Check all
+            <span
+              class="counter"
+              data-counter-time="500"
+              data-counter-delay="10"
+              >3,583</span
+            >
+            reviews on Amazon.com</a
           >
         </div>
       </div>
@@ -228,7 +235,7 @@
         Create custom landing pages with Omega that converts<br />
         more visitors than any website.
       </p>
-      <div class="card-container" data-aos="fade-right" data-aos-delay="500">
+      <div class="card-container" data-aos="fade-right" data-aos-delay="100">
         <div class="card" data-aos="fade-right">
           <h1 class="price-card-title">Limited</h1>
           <p class="price-card-price">Free</p>
@@ -271,9 +278,16 @@
             </button>
           </div>
         </div>
-        <div class="card" data-aos="fade-left" data-aos-delay="600">
+        <div class="card" data-aos="fade-left" data-aos-delay="100">
           <h1 class="price-card-title">Only eBook</h1>
-          <p class="price-card-price">$29</p>
+          <p class="price-card-price">
+            $<span
+              class="counter"
+              data-counter-time="500"
+              data-counter-delay="10"
+              >29</span
+            >
+          </p>
           <p class="price-card-feature">One time purchase</p>
           <p class="price-card-description">
             Get the eBook version + <br />
@@ -491,9 +505,16 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./src/countup.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      $('.counter').countUp();
     </script>
   </body>
 </html>
