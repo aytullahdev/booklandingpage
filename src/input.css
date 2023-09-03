@@ -45,7 +45,7 @@
     @apply w-40 lg:w-full;
   }
   .card-container{
-    @apply flex justify-center lg:justify-between flex-row flex-wrap  w-full  gap-8  items-center overflow-x-hidden py-5 ;
+    @apply flex justify-center xl:justify-between flex-row flex-wrap  w-full  gap-8  items-center overflow-x-hidden py-5 ;
   }
   .author-name{
     @apply text-[#19191B] text-2xl font-bold pb-10;
@@ -85,7 +85,7 @@
     @apply text-[#696871] text-base;
   }
   .faqdiv{
-      @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-20 py-20 overflow-x-hidden;
+      @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:px-10 xl:px-0 lg:gap-20 py-20 overflow-x-hidden;
   }
 
   .faq-card{
