@@ -53,9 +53,30 @@
   .author-description{
     @apply text-[#696871] text-base;
   }
-  
+  .bookbanner{
+    @apply bg-[#413E65] grid grid-cols-1 lg:grid-cols-2 p-5  lg:p-9 rounded-lg space-y-5 lg:space-y-0;
+  }
+  .stat-container{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20
+    text-center my-20;
+  }
+  .stat-card{
+    @apply flex flex-col space-y-5 p-5;
+  }
+  .stat-title{
+    @apply text-[#5454D4] font-bold text-6xl;
+  }
+  .stat-desc{
+    @apply text-[#696871] text-xl;
+  }
   .card{
-     @apply bg-white rounded-md p-5 w-[300px] md:w-[350px] cursor-pointer flex flex-col justify-between h-[440px] ;
+     @apply bg-white rounded-md p-5 w-[300px] md:w-[350px] cursor-pointer flex flex-col justify-between h-[440px]  ;
+  }
+  .aboutbook-card{
+    @apply flex flex-row space-x-5 items-center justify-center h-[70px] ;
+  }
+  .aboutbook-title{
+    @apply text-[#19191B] text-xl;
   }
   .price-card-title{
      @apply text-indigo text-base font-normal text-center  py-2 ;
